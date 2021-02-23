@@ -22,6 +22,7 @@
     </ul>
   </main>
 </template>
+
 <script>
 export default {
   computed: {
