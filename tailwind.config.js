@@ -18,19 +18,18 @@ module.exports = {
         transparent: {
           default: 'transparent'
         },
-        gray: {
+        primary: {
           100: '#F3F4F6',
           200: '#E5E7EB',
           300: '#D1D5DB',
           400: '#9CA3AF',
           500: '#6B7280',
+          default: '#6B7280',
           600: '#4B5563',
           700: '#374151',
           800: '#1F2937',
           900: '#111827'
-        },
-        primary: {
-          100: '#ECEFF5',
+          /*100: '#ECEFF5',
           200: '#CBD2E1',
           300: '#ABB6CD',
           400: '#8C9AB7',
@@ -39,7 +38,7 @@ module.exports = {
           600: '#3E4F70',
           700: '#2C3A57',
           800: '#1C263B',
-          900: '#0D131E'
+          900: '#0D131E'*/
         },
         accent: {
           100: '#ECFDF5',

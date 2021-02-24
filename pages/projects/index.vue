@@ -3,7 +3,11 @@
     v-if="projectPosts"
     class="main"
   >
-    <h1 class="title text-left">Projects</h1>
+    <div class="mb-4 w-full text-left">
+      <h1 class="text-4xl md:text-3xl font-bold text-gray-800 dark:text-primary-300">Projects</h1>
+      <div class="w-full bg-accent-400 dark:bg-accent-500 rounded-lg mt-2" style="height:2px;"></div>
+    </div>
+
     <ul
       v-for="(projectPost, index) in projectPosts"
       :key="index"
