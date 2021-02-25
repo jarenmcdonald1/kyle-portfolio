@@ -6,9 +6,9 @@
       <div class="w-full bg-accent-400 dark:bg-accent-500 rounded-lg mt-2" style="height:2px;"></div>
     </div>
     
-    <div class="w-auto md:w-full max-w-lg pt-8">
+    <div class="w-auto sm:w-full max-w-lg pt-8">
 
-      <div class="bg-gray-300 dark:bg-gray-800 rounded py-4 px-2 md:px-6 md:py-6">
+      <div class="bg-gray-300 dark:bg-gray-800 rounded py-4 px-2 sm:px-4 md:px-6 md:py-6">
 
         <h2 class="text-6xl font-black tracking-tighter mb-4 text-accent-500">Say Hello</h2>
 

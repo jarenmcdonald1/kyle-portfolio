@@ -1,4 +1,5 @@
 <template>
+
   <article
     v-if="projectPost"
     class="main article"
@@ -22,7 +23,9 @@
       >
     </div>
   </article>
+  
 </template>
+
 <script>
 export default {
   async asyncData({ params, payload }) {
@@ -34,3 +37,6 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+</style>
