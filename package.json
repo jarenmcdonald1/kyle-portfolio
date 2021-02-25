@@ -16,9 +16,11 @@
     "license": "MIT",
     "dependencies": {
         "@nuxtjs/markdownit": "^1.2.6",
-        "nuxt": "^2.15.2"
+        "nuxt": "^2.15.2",
+        "tailwindcss-aspect-ratio": "^3.0.0"
     },
     "devDependencies": {
+        "@nuxt/image": "^0.4.1",
         "@nuxtjs/color-mode": "^1.1.1",
         "@nuxtjs/pwa": "^3.3.2",
         "@nuxtjs/svg": "^0.1.12",
@@ -34,6 +36,7 @@
         "postcss-preset-env": "^6.7.0",
         "prettier": "^1.16.4",
         "tailwindcss": "^1.9.6",
-        "tailwindcss-dark-mode": "^1.1.7"
+        "tailwindcss-dark-mode": "^1.1.7",
+        "tailwindcss-responsive-embed": "^1.0.0"
     }
 }

@@ -3,7 +3,7 @@
     <Header />
     <ColorModePicker />
 
-    <div class="min-h-screen" style="padding-top:1rem !important;">
+    <div class="min-h-screen" style="">
       <nuxt />
     </div>
 

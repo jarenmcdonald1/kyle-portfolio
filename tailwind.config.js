@@ -10,6 +10,13 @@ module.exports = {
   theme: {
     darkSelector: '.dark-mode',
     extend: {
+      aspectRatio: {
+        none: 0,
+        square: [1, 1],
+        "16/9": [16, 9],
+        "4/3": [4, 3],
+        "21/9": [21, 9]
+      },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans],
         mono: [...defaultTheme.fontFamily.mono]
@@ -66,9 +73,15 @@ module.exports = {
   variants: {
     backgroundColor: ['dark', 'dark-hover', 'dark-group-hover'],
     borderColor: ['dark', 'dark-focus', 'dark-focus-within'],
-    textColor: ['dark', 'dark-hover', 'dark-active']
+    textColor: ['dark', 'dark-hover', 'dark-active'],
+    aspectRatio: ['responsive'],
+    extend: {},
   },
-  plugins: [require('tailwindcss-dark-mode')()],
+  plugins: [
+    require('tailwindcss-dark-mode')(),
+    require("tailwindcss-aspect-ratio"),
+    require("tailwindcss-responsive-embed"),
+  ],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',

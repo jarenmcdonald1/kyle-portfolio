@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-center items-center">
 
-    <footer class="w-full flex flex-wrap items-center px-2 md:px-4 py-2 sm:py-6 lg:py-0 bg-gray-700 dark:bg-primary-800">
+    <footer class="w-full flex flex-wrap items-center px-2 md:px-4 py-2 sm:py-6 bg-gray-700 dark:bg-primary-800">
 
         <div class="flex flex-col md:flex-row md:items-center w-full md:justify-center">
             <nav>
@@ -12,7 +12,7 @@
                 <li>
                     <nuxt-link class="menu-btn" to="/projects">Projects</nuxt-link>
                 </li>
-                <li>
+                <li class="hidden">
                     <nuxt-link class="menu-btn" to="/blog">Blog</nuxt-link>
                 </li>
                 <li>

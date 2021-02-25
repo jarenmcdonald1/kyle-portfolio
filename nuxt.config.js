@@ -69,6 +69,7 @@ export default {
   buildModules: [
     '@nuxtjs/color-mode',
     '@nuxtjs/tailwindcss',
+    '@nuxt/image',
     '@nuxtjs/svg',
     '@nuxtjs/pwa'
   ],

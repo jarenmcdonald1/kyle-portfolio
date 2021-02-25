@@ -3,7 +3,7 @@
 
     <div class="flex-1 flex justify-between items-center">
       <nuxt-link to="/" class="block font-normal">
-        <span class="text-5xl md:text-4xl text-gray-800 dark:text-accent-500 font-normal">KH</span>
+        <span class="text-5xl md:text-4xl text-gray-800 dark:text-accent-500 font-light tracking-tighter"><span class="font-black">K</span>H</span>
       </nuxt-link>
     </div>
 
@@ -22,7 +22,7 @@
           <li>
             <nuxt-link class="menu-btn" to="/projects">Projects</nuxt-link>
           </li>
-          <li>
+          <li class='hidden'>
             <nuxt-link class="menu-btn" to="/blog">Blog</nuxt-link>
           </li>
           <li>
