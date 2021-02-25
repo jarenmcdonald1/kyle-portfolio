@@ -63,12 +63,13 @@ collections:
           label: 'Project Type',
           name: 'project_type',
           widget: 'select',
-          default: 'story',
-          options: [{ label: 'Story', value: 'story' }, { label: 'Photo', value: 'photo' }],
+          default: 'writing',
+          options: [{ label: 'Writing', value: 'writing' }, { label: 'Photo', value: 'photo' }],
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
+      - { label: 'Link to Sample', name: 'link', widget: 'string', required: false }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }
       - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
       - {
@@ -79,18 +80,18 @@ collections:
           summary: '{{fields.image}}',
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
-  # - name: 'story_projects'
+  # - name: 'writing_projects'
   #   # identifier_field: name
-  #   label: 'Story Projects'
-  #   label_singular: 'Story Project'
+  #   label: 'Writing Projects'
+  #   label_singular: 'Writing Project'
   #   folder: 'assets/content/stories'
   #   create: true
   #   format: 'json'
   #   slug: '{{slug}}'
   #   preview_path: 'stories/{{slug}}'
-  #   # filter: { field: 'project_type', value: 'story' }
+  #   # filter: { field: 'project_type', value: 'writing' }
   #   fields:
-  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['story', 'photo'] }
+  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['writing', 'photo'] }
   #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
   #     - { label: 'Title', name: 'title', widget: 'string' }
   #     - { label: 'Description', name: 'description', widget: 'string', required: false }
@@ -115,7 +116,7 @@ collections:
   #   preview_path: 'photos/{{slug}}'
   #   # filter: { field: 'project_type', value: 'photo' }
   #   fields:
-  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['story', 'photo'] }
+  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['writing', 'photo'] }
   #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
   #     - { label: 'Title', name: 'title', widget: 'string' }
   #     - { label: 'Description', name: 'description', widget: 'string', required: false }
