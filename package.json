@@ -16,6 +16,7 @@
     "license": "MIT",
     "dependencies": {
         "@nuxtjs/markdownit": "^1.2.6",
+        "markdown-it": "^12.0.4",
         "markdown-it-attrs": "^4.0.0",
         "markdown-it-div": "^1.1.0",
         "nuxt": "^2.15.2",
@@ -24,6 +25,7 @@
     "devDependencies": {
         "@nuxt/image": "^0.4.1",
         "@nuxtjs/color-mode": "^1.1.1",
+        "@nuxtjs/markdownit-loader": "^1.2.0",
         "@nuxtjs/pwa": "^3.3.2",
         "@nuxtjs/svg": "^0.1.12",
         "@nuxtjs/tailwindcss": "^3.4.1",
