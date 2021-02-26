@@ -6,13 +6,13 @@
   >
     <h1 class="article-title">{{ projectPost.title }}</h1>
     <p class="article-date">{{new Date( projectPost.date ).toLocaleString('default', {month:'long'}) }} {{ new Date( projectPost.date ).getDate() }}, {{ new Date( projectPost.date ).getFullYear() }}</p>
-    <nuxt-img
+    <img
       class="cover-image"
       :src="projectPost.cover"
-     />
+    >
 
     <div v-if="projectPost.videoLink">
-      <div class="embed-responsive aspect-ratio-16/9">
+      <div class="embed-responsive aspect-ratio-16/9 h-full w-full">
         <iframe class="embed-responsive-item" :src="`https://www.youtube.com/embed/${projectPost.videoLink}`"
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
             picture-in-picture" allowfullscreen
@@ -30,17 +30,15 @@
     <div
       class="block mt-8 mb-4 article-body"
       v-html="$md.render(projectPost.body)"
-    />
+    ></div>
     <div v-if="projectPost.gallery">
       <nuxt-img
         v-for="image in projectPost.gallery"
-        class="image"
+        class="image mb-4 mx-auto"
         :key="image.id"
         :src="image"
-        loading="lazy"
-        sizes="100vw"
-        
-       />
+        style="width:100%;max-width:800px;"
+      />
     </div>
   </article>
 

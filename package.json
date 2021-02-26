@@ -16,6 +16,8 @@
     "license": "MIT",
     "dependencies": {
         "@nuxtjs/markdownit": "^1.2.6",
+        "markdown-it-attrs": "^4.0.0",
+        "markdown-it-div": "^1.1.0",
         "nuxt": "^2.15.2",
         "tailwindcss-aspect-ratio": "^3.0.0"
     },
