@@ -15,6 +15,12 @@
         </div>
       </div>
 
+
+    </div>
+
+    <div class="bg-primary-800 w-full flex flex-col sm:flex-row justify-center items-center">
+        <nuxt-link class="index-body-btns" to="/projects">View some of my work</nuxt-link>
+        <nuxt-link class="index-body-btns" to="/contact">Let's talk!</nuxt-link>
     </div>
 
   </div>
@@ -49,6 +55,34 @@ export default {
 
     &:hover {
       @apply bg-accent-500 shadow-2xl;
+    }
+  }
+
+  .index-body-btns {
+    @apply py-6 w-full text-lg bg-transparent;
+    &:hover {
+      @apply bg-gray-900 text-accent-500;
+    }
+  }
+
+  .light-mode {
+    & .index-body-btns {
+      @apply bg-gray-300 text-gray-800;
+      &:hover {
+        @apply bg-accent-500 text-gray-100;
+      }
+    }
+  }
+
+  @screen sm {
+    .index-body-btns {
+      @apply flex-1 text-2xl;
+    }
+  }
+
+  @screen md {
+    .index-body-btns {
+      @apply py-8;
     }
   }
 </style>

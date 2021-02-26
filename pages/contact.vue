@@ -15,7 +15,7 @@
         <div class="mx-auto w-40 bg-gray-400 dark:bg-gray-700 mb-4 md:mb-6 rounded" style="height:1px;"></div>
 
         <div class="flex flex-col md:flex-row justify-center items-center">
-          <a class="btn contact-btn" href="tel:+19055551234">+1 (905) 555-1234</a>
+          <a class="hidden btn contact-btn" href="tel:+19055551234">+1 (905) 555-1234</a>
           <a class="btn contact-btn" href="mailto:kyhooper5@gmail.com">kyhooper5@gmail.com</a>
         </div>
 
