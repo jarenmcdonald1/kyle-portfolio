@@ -6,10 +6,10 @@
   >
     <h1 class="article-title">{{ projectPost.title }}</h1>
     <p class="article-date">{{new Date( projectPost.date ).toLocaleString('default', {month:'long'}) }} {{ new Date( projectPost.date ).getDate() }}, {{ new Date( projectPost.date ).getFullYear() }}</p>
-    <img
+    <nuxt-img
       class="cover-image"
       :src="projectPost.cover"
-    >
+     />
 
     <div v-if="projectPost.videoLink">
       <div class="embed-responsive aspect-ratio-16/9">
@@ -32,12 +32,13 @@
       v-html="$md.render(projectPost.body)"
     />
     <div v-if="projectPost.gallery">
-      <img
+      <nuxt-img
         v-for="image in projectPost.gallery"
         class="image"
         :key="image.id"
         :src="image"
-      >
+        loading="lazy"
+       />
     </div>
   </article>
 
