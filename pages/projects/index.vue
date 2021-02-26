@@ -3,7 +3,7 @@
     v-if="projectPosts"
     class="main"
   >
-    <div class="mb-4 w-full text-left">
+    <div class="mb-4 w-full text-left pt-2 md:pt-4">
       <h1 class="text-4xl md:text-3xl font-bold text-gray-800 dark:text-primary-300">Projects</h1>
       <div class="w-full bg-accent-400 dark:bg-accent-500 rounded-lg mt-2" style="height:2px;"></div>
     </div>

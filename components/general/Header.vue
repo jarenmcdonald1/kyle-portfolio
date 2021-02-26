@@ -91,7 +91,7 @@ export default {
 
 @screen md {
   .menu-btn {
-    @apply py-2 px-2 block rounded border-b-2 border-transparent text-gray-400 text-base;
+    @apply py-2 px-2 mx-3 block rounded border-b-2 border-transparent text-gray-400 text-base;
     &:hover {
       @apply bg-gray-800 text-accent-500;
     }
