@@ -31,7 +31,8 @@
       class="block mt-8 mb-4 article-body"
       v-html="$md.render(projectPost.body)"
     ></div>
-    <div v-if="projectPost.gallery">
+
+    <div v-if="projectPost.gallery" class="flex flex-col justify-center items-center">
       <nuxt-img
         v-for="image in projectPost.gallery"
         class="image mb-4 mx-auto"
