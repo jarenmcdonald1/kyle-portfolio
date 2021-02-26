@@ -38,6 +38,8 @@
         :key="image.id"
         :src="image"
         loading="lazy"
+        sizes="100vw"
+        
        />
     </div>
   </article>
