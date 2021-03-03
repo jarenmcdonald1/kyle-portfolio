@@ -30,7 +30,7 @@
     <div
       class="block mt-8 mb-4 article-body"
       v-html="$md.render(projectPost.body)"
-    ></div>
+    ></div> 
 
     <div v-if="projectPost.gallery" class="flex flex-col justify-center items-center">
       <nuxt-img
@@ -69,7 +69,7 @@ export default {
   }
 
   .article-body {
-    @apply text-gray-300;
+    @apply text-gray-300 font-sans font-medium leading-5;
   }
 
   .project-link-btn {
@@ -101,7 +101,7 @@ export default {
     }
 
     .project-link-btn {
-      @apply text-2xl;
+      @apply text-xl;
     }
   }
 
