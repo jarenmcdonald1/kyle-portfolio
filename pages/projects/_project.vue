@@ -12,9 +12,9 @@
     />
 
     <div v-if="projectPost.videoLink">
-      <div class="embed-responsive aspect-ratio-16/9 h-full w-full">
-        <iframe class="embed-responsive-item" :src="`https://www.youtube.com/embed/${projectPost.videoLink}`"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+      <div class="embed-r-con">
+        <iframe class="embed-r-item mx-auto" :src="`https://www.youtube.com/embed/${projectPost.videoLink}`"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
             picture-in-picture" allowfullscreen
         >
         </iframe>
@@ -59,6 +59,25 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
+
+  /*.embed-r-con {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+  .embed-r-item::after {
+    display: block;
+    content: "";
+    padding-top: 56.25%.
+  }
+  .embed-r-con >>> iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }*/
 
   .article-title {
     @apply mb-2 text-4xl text-gray-300;

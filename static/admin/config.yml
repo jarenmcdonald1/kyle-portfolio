@@ -70,7 +70,13 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string', required: false }
       - { label: 'Link to Sample', name: 'link', widget: 'string', required: false }
-      - { label: 'Video link to embed', name: 'videoLink', widget: 'string', required: false }
+      - {
+          label: 'Video link to embed',
+          name: 'videoLink',
+          widget: 'string',
+          required: false,
+          hint: 'Ex: https://youtube.com/embed/_____',
+        }
       - { label: 'Content', name: 'body', widget: 'markdown', required: false }
       - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
       - {
@@ -85,11 +91,11 @@ collections:
   #   # identifier_field: name
   #   label: 'Writing Projects'
   #   label_singular: 'Writing Project'
-  #   folder: 'assets/content/stories'
+  #   folder: 'assets/content/writing'
   #   create: true
   #   format: 'json'
   #   slug: '{{slug}}'
-  #   preview_path: 'stories/{{slug}}'
+  #   preview_path: 'writing/{{slug}}'
   #   # filter: { field: 'project_type', value: 'writing' }
   #   fields:
   #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['writing', 'photo'] }
