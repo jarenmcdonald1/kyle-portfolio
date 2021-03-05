@@ -34,7 +34,17 @@ collections:
               widget: string,
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
-          # - { label: Site Email, name: siteemail, widget: string, required: false }
+          - { label: Site Email, name: siteemail, widget: string, hint: 'ex. your-email@email.com', required: false }
+          - {
+              label: Twitter Link,
+              name: twitterlink,
+              widget: string,
+              hint: 'ex. https://twitter.com/youraccount',
+              required: false,
+            }
+          - { label: Instagram Link, name: instalink, widget: string, required: false }
+          - { label: YouTube Link, name: youtubelink, widget: string, required: false }
+          - { label: LinkedIn Link, name: linkedinlink, widget: string, required: false }
   - name: 'blog'
     label: 'Blog'
     # identifier_field: name
@@ -64,7 +74,7 @@ collections:
           name: 'project_type',
           widget: 'select',
           default: 'writing',
-          options: [{ label: 'Writing', value: 'writing' }, { label: 'Photo', value: 'photo' }],
+          options: [{ label: 'Writing', value: 'writing' }, { label: 'Media', value: 'media' }],
         }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -98,7 +108,7 @@ collections:
   #   preview_path: 'writing/{{slug}}'
   #   # filter: { field: 'project_type', value: 'writing' }
   #   fields:
-  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['writing', 'photo'] }
+  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['writing', 'media'] }
   #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
   #     - { label: 'Title', name: 'title', widget: 'string' }
   #     - { label: 'Description', name: 'description', widget: 'string', required: false }
@@ -112,18 +122,18 @@ collections:
   #         summary: '{{fields.image}}',
   #         field: { label: 'Image', name: 'image', widget: 'image' },
   #       }
-  # - name: 'photo_projects'
+  # - name: 'media_projects'
   #   # identifier_field: name
-  #   label: 'Photo Projects'
-  #   label_singular: 'Photo Project'
-  #   folder: 'assets/content/photos'
+  #   label: 'Media Projects'
+  #   label_singular: 'Media Project'
+  #   folder: 'assets/content/media'
   #   create: true
   #   format: 'json'
   #   slug: '{{slug}}'
-  #   preview_path: 'photos/{{slug}}'
-  #   # filter: { field: 'project_type', value: 'photo' }
+  #   preview_path: 'media/{{slug}}'
+  #   # filter: { field: 'project_type', value: 'media' }
   #   fields:
-  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['writing', 'photo'] }
+  #     # - { label: 'Project Type', name: 'project_type', widget: 'select', options: ['writing', 'media'] }
   #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
   #     - { label: 'Title', name: 'title', widget: 'string' }
   #     - { label: 'Description', name: 'description', widget: 'string', required: false }
