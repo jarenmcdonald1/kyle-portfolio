@@ -1,5 +1,10 @@
 {
   "sitename": "Kyle Hooper",
   "sitedescription": "Kyle's boilerplate description",
-  "sitelang": "en-US"
+  "sitelang": "en-US",
+  "twitterlink": "https://twitter.com/youraccount",
+  "instalink": "https://instagram.com/youraccount",
+  "youtubelink": "https://youtube.com/youraccount",
+  "linkedinlink": "https://linkedin.com/youraccount",
+  "siteemail": "kyhooper5@gmail.com"
 }
